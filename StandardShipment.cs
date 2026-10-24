@@ -36,5 +36,11 @@ namespace Session05_AssignmentOOP
         {
             return (StandardShipment)MemberwiseClone();
         }
+        public StandardShipment DeepCopy()
+        {
+            StandardShipment copy = (StandardShipment)MemberwiseClone();
+            copy.Destination = new DeliveryAddress(Destination.City, Destination.Street, Destination.BuildingNumber);
+            return copy;
+        }
     }
 }
