@@ -32,6 +32,9 @@ namespace Session05_AssignmentOOP
         {
             return this;
         }
-        
+        public StandardShipment ShallowCopy()
+        {
+            return (StandardShipment)MemberwiseClone();
+        }
     }
 }

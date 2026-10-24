@@ -56,9 +56,53 @@
             #region Part 02 — Practical
 
             #region Q1
+            //StandardShipment shipment01 = new StandardShipment("sh001", "Laptop", 3, 80, new DeliveryAddress("Cairo", "Tahrir", 3));
+            //StandardShipment shipment02 = shipment01.CopyShipment();
+            //StandardShipment shipment03 = shipment01;
+            //Console.WriteLine("Shipment01");
+            //Console.WriteLine(shipment01.Description);
+            //Console.WriteLine(shipment01.Weight);
+            //Console.WriteLine(shipment01.Destination.City);
+            //Console.WriteLine(shipment01.GetHashCode());
+            //Console.WriteLine("Shipment02");
+            //Console.WriteLine(shipment02.Description);
+            //Console.WriteLine(shipment02.Weight);
+            //Console.WriteLine(shipment02.Destination.City);
+            //Console.WriteLine(shipment02.GetHashCode());
+            //Console.WriteLine("Shipment03");
+            //Console.WriteLine(shipment03.Description);
+            //Console.WriteLine(shipment03.Weight);
+            //Console.WriteLine(shipment03.Destination.City);
+            //Console.WriteLine(shipment03.GetHashCode());
+            //shipment02.Description = "Mobile";
+            //shipment02.Weight = 7;
+
+            //shipment02.Destination.City = "Alex";
+            //shipment03.Description = "TV";
+            //shipment03.Weight = 8;
+            //shipment03.Destination.City = "Giza";
+            //Console.WriteLine("------------------------------------------------");
+            //Console.WriteLine("After update");
+            //Console.WriteLine("Shipment01");
+            //Console.WriteLine(shipment01.Description);
+            //Console.WriteLine(shipment01.Weight);
+            //Console.WriteLine(shipment01.Destination.City);
+            //Console.WriteLine(shipment01.GetHashCode());
+            //Console.WriteLine("Shipment02");
+            //Console.WriteLine(shipment02.Description);
+            //Console.WriteLine(shipment02.Weight);
+            //Console.WriteLine(shipment02.Destination.City);
+            //Console.WriteLine(shipment02.GetHashCode());
+            //Console.WriteLine("Shipment03");
+            //Console.WriteLine(shipment03.Description);
+            //Console.WriteLine(shipment03.Weight);
+            //Console.WriteLine(shipment03.Destination.City);
+            //Console.WriteLine(shipment03.GetHashCode());
+            #endregion
+
+            #region Q2
             StandardShipment shipment01 = new StandardShipment("sh001", "Laptop", 3, 80, new DeliveryAddress("Cairo", "Tahrir", 3));
-            StandardShipment shipment02 = shipment01.CopyShipment();
-            StandardShipment shipment03 = shipment01;
+            StandardShipment shipment02 = shipment01.ShallowCopy();
             Console.WriteLine("Shipment01");
             Console.WriteLine(shipment01.Description);
             Console.WriteLine(shipment01.Weight);
@@ -69,18 +113,9 @@
             Console.WriteLine(shipment02.Weight);
             Console.WriteLine(shipment02.Destination.City);
             Console.WriteLine(shipment02.GetHashCode());
-            Console.WriteLine("Shipment03");
-            Console.WriteLine(shipment03.Description);
-            Console.WriteLine(shipment03.Weight);
-            Console.WriteLine(shipment03.Destination.City);
-            Console.WriteLine(shipment03.GetHashCode());
             shipment02.Description = "Mobile";
             shipment02.Weight = 7;
-
             shipment02.Destination.City = "Alex";
-            shipment03.Description = "TV";
-            shipment03.Weight = 8;
-            shipment03.Destination.City = "Giza";
             Console.WriteLine("------------------------------------------------");
             Console.WriteLine("After update");
             Console.WriteLine("Shipment01");
@@ -93,14 +128,9 @@
             Console.WriteLine(shipment02.Weight);
             Console.WriteLine(shipment02.Destination.City);
             Console.WriteLine(shipment02.GetHashCode());
-            Console.WriteLine("Shipment03");
-            Console.WriteLine(shipment03.Description);
-            Console.WriteLine(shipment03.Weight);
-            Console.WriteLine(shipment03.Destination.City);
-            Console.WriteLine(shipment03.GetHashCode());
             #endregion
 
-
+            
             #endregion
         }
     }
