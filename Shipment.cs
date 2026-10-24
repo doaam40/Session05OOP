@@ -11,6 +11,7 @@ namespace Session05_AssignmentOOP
         double weight;
         decimal deliveryFee;
         public DeliveryAddress Destination { get; set; }
+        public static int TotalShipmentsCreated { get; set; } = 0;
 
         public string TrackingCode
         {
@@ -70,6 +71,7 @@ namespace Session05_AssignmentOOP
             Weight = 1;
             DeliveryFee = 50;
             Destination = default;
+            TotalShipmentsCreated++;
         }
         public Shipment(string _trackingCode, string _description, double _weight, decimal _deliveryFee, DeliveryAddress _destination)
         {
@@ -78,6 +80,7 @@ namespace Session05_AssignmentOOP
             Weight = _weight;
             DeliveryFee = _deliveryFee;
             Destination = _destination;
+            TotalShipmentsCreated++;
         }
         public void UpdateDeliveryFee(decimal newFee)
         {

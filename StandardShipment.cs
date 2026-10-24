@@ -30,16 +30,19 @@ namespace Session05_AssignmentOOP
         }
         public StandardShipment CopyShipment()
         {
+            TotalShipmentsCreated++;
             return this;
         }
         public StandardShipment ShallowCopy()
         {
+            TotalShipmentsCreated++;
             return (StandardShipment)MemberwiseClone();
         }
         public StandardShipment DeepCopy()
         {
             StandardShipment copy = (StandardShipment)MemberwiseClone();
             copy.Destination = new DeliveryAddress(Destination.City, Destination.Street, Destination.BuildingNumber);
+            TotalShipmentsCreated++;
             return copy;
         }
     }

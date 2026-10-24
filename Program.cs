@@ -159,6 +159,10 @@
             Console.WriteLine(shipment02.Destination.City);
             Console.WriteLine(shipment02.GetHashCode());
             #endregion
+
+            #region Q4
+
+            #endregion
             #endregion
         }
     }
