@@ -114,5 +114,10 @@ namespace Session05_AssignmentOOP
             }
             return default;
         }
+        public static int GetTotalShipmentsCreated()
+        { 
+            return TotalShipmentsCreated;
+        }
+
     }
 }
