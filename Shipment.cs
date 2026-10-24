@@ -63,7 +63,11 @@ namespace Session05_AssignmentOOP
         }
         public abstract decimal EstimatedCost { get; }
 
-
+        static Shipment()
+        {
+            TotalShipmentsCreated = 0;
+            Console.WriteLine("Shipment System Initialized");
+        }
         public Shipment(string _trackingCode)
         {
             TrackingCode = _trackingCode;
