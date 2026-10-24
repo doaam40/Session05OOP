@@ -169,8 +169,14 @@
             #endregion
 
             #region Q6
-            Console.WriteLine($"Total Shipment Created : {Shipment.GetTotalShipmentsCreated()}");
+            //Console.WriteLine($"Total Shipment Created : {Shipment.GetTotalShipmentsCreated()}");
 
+            #endregion
+
+            #region Q7
+            DeliveryUtilities.PrintSeparator();
+            DeliveryUtilities.PrintSystemTitle();
+            DeliveryUtilities.PrintSeparator();
             #endregion
             #endregion
         }
