@@ -23,6 +23,17 @@
             // e) when getting a data from database in an object and we do not want to change that data but want to make calculation
             // or testing on it only
             #endregion
+
+            #region Q3
+            // a) static fields do not relate to an object, they shared along all objects, do not change from one object and another
+            // on, but instance member relate to an object, they do not shared among objects, any object has a new copy of instance
+            // members
+            // b) the static method related to class not object, so it called by class, can not access instance members, contains only
+            // static members
+            // c) static constructor used to initialize values to static fields only, executed in run time the first constructor, and
+            // does not execute another time (execute one time only)
+            // d) static class contain static fields and methods only, can not create object of static class
+            #endregion
             #endregion
         }
     }
