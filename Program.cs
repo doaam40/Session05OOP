@@ -42,6 +42,15 @@
             // c) in static class
             // d) no
             #endregion
+
+            #region Q5
+            // a) a partial class is a part of class, when we have a big class so we separate it to parts, each part is a partial class,
+            // but the compiler sees them as one class
+            // b) when we have a big class so we separate it to parts, each part is a partial class, to make the code readable not complex
+            // c) the partial method when we write the signature of method in partial class, and write the implementation of that method
+            // in another partial class
+            // d) it makes error
+            #endregion
             #endregion
         }
     }
