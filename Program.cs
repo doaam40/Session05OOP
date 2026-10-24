@@ -34,6 +34,14 @@
             // does not execute another time (execute one time only)
             // d) static class contain static fields and methods only, can not create object of static class
             #endregion
+
+            #region Q4
+            // a) extension method is a method in a class but related to another class, as if we want to add method to a built-in class
+            // so we make that by extension method
+            // b) this
+            // c) in static class
+            // d) no
+            #endregion
             #endregion
         }
     }
