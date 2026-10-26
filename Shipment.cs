@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Session05_AssignmentOOP
 {
-    internal abstract class Shipment : ITrackable
+    internal abstract partial class Shipment : ITrackable
     {
         string trackingCode;
         string description;
@@ -13,7 +13,6 @@ namespace Session05_AssignmentOOP
         public DeliveryAddress Destination { get; set; }
         public static int TotalShipmentsCreated { get; set; } = 0;
         //public virtual string ShipmentType { get; set; }
-        public virtual string TrackingStatus { get; set; }
 
         public string TrackingCode
         {
@@ -119,11 +118,6 @@ namespace Session05_AssignmentOOP
         public static int GetTotalShipmentsCreated()
         { 
             return TotalShipmentsCreated;
-        }
-
-        public virtual string GetTrackingStatus()
-        {
-            throw new NotImplementedException();
         }
     }
 }

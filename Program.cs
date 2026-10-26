@@ -183,7 +183,11 @@
             StandardShipment shipment = new StandardShipment("sh001", "Laptop", 3, 80, new DeliveryAddress("Cairo", "Tahrir", 3));
             Console.WriteLine(shipment.GetSummary());
             Console.WriteLine(shipment.IsDelivered());
-            
+
+            #endregion
+
+            #region Q9
+
             #endregion
             #endregion
         }
