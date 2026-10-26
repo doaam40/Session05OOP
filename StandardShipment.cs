@@ -6,6 +6,10 @@ namespace Session05_AssignmentOOP
 {
     internal class StandardShipment : Shipment, ITrackable, IInsurable
     {
+        //public override string ShipmentType { get; set; } = "Standard";
+        public override string TrackingStatus { get; set; }
+
+
         public StandardShipment(string _trackingCode, string _description, double _weight, decimal _deliveryFee, DeliveryAddress _destination) : base(_trackingCode, _description, _weight, _deliveryFee, _destination)
         {
 
@@ -17,7 +21,7 @@ namespace Session05_AssignmentOOP
             return 5m / 100m * EstimatedCost;
         }
 
-        public string GetTrackingStatus() => "Ready";
+        public override string GetTrackingStatus() => "Ready";
 
 
         public override void PrintShipment()

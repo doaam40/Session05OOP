@@ -174,9 +174,16 @@
             #endregion
 
             #region Q7
-            DeliveryUtilities.PrintSeparator();
-            DeliveryUtilities.PrintSystemTitle();
-            DeliveryUtilities.PrintSeparator();
+            //DeliveryUtilities.PrintSeparator();
+            //DeliveryUtilities.PrintSystemTitle();
+            //DeliveryUtilities.PrintSeparator();
+            #endregion
+
+            #region Q8
+            StandardShipment shipment = new StandardShipment("sh001", "Laptop", 3, 80, new DeliveryAddress("Cairo", "Tahrir", 3));
+            Console.WriteLine(shipment.GetSummary());
+            Console.WriteLine(shipment.IsDelivered());
+            
             #endregion
             #endregion
         }
