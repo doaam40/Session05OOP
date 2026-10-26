@@ -119,5 +119,9 @@ namespace Session05_AssignmentOOP
         { 
             return TotalShipmentsCreated;
         }
+        public partial void OnTrackingStatusChanged(string newStatus)
+        {
+            Console.WriteLine($"Tracking status changed to: {newStatus}");
+        }
     }
 }

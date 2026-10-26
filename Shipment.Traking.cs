@@ -11,9 +11,10 @@ namespace Session05_AssignmentOOP
         {
             throw new NotImplementedException();
         }
-        public virtual string UpdateTrackingStatus()
+        public virtual void UpdateTrackingStatus(string newStatus)
         {
-            throw new NotImplementedException();
+            OnTrackingStatusChanged(newStatus);
         }
+        public partial void OnTrackingStatusChanged(string newStatus);
     }
 }
